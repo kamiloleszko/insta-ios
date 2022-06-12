@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>652955041853-mbha3o5n0rf5q43edsl74smft3noslqf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.652955041853-mbha3o5n0rf5q43edsl74smft3noslqf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGy--kLvi3VNDaHYES7Zn9RtLcFn8Hs-0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>652955041853</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pl.software.kolsoft.InstaTut</string>
+	<key>PROJECT_ID</key>
+	<string>instatut-f3143</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instatut-f3143.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:652955041853:ios:3e744b444d053d159aea54</string>
+</dict>
+</plist>
