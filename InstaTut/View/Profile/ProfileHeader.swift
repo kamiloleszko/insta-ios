@@ -18,7 +18,6 @@ class ProfileHeader: UICollectionReusableView {
     
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
-//        iv.image = UIImage(imageLiteralResourceName: "venom-7")
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.backgroundColor = .lightGray
@@ -27,7 +26,6 @@ class ProfileHeader: UICollectionReusableView {
     
     private let nameLabel: UILabel = {
         let label = UILabel()
-//        label.text = "Eddie Brokck"
         label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
     }()
