@@ -5,11 +5,15 @@
 //  Created by kamil on 16/06/2022.
 //
 
-import Foundation
+import UIKit
 
 struct ProfileHeaderViewModel {
     
     let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
     
     var fullname: String {
         return user.fullname
@@ -19,7 +23,25 @@ struct ProfileHeaderViewModel {
         return URL(string: user.profileImageUrl)
     }
     
-    init(user: User) {
-        self.user = user
+    var followButtonText: String {
+        if  user.isCurrentUser {
+            return "Edit profile"
+        }
+        
+        return user.isFollowed
+            ? "Following"
+            : "Follow"
+    }
+    
+    var followButtonColor: UIColor {
+        return user.isCurrentUser
+            ? .white
+            : .systemBlue
+    }
+    
+    var followButtonTextColor: UIColor {
+        return user.isCurrentUser
+            ? .black
+            : .white
     }
 }
