@@ -14,6 +14,8 @@ struct User {
     let username: String
     let uid: String
     
+    var isFollowed = false
+    
     init(dictionary: [String: Any]) {
         self.email = dictionary["email"] as? String ?? ""
         self.fullname = dictionary["fullname"] as? String ?? ""

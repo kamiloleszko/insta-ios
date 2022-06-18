@@ -44,6 +44,7 @@
 		8E6619DD2855F29B00ECD8A1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DC2855F29B00ECD8A1 /* AuthService.swift */; };
 		8E6619DF285613D900ECD8A1 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DE285613D900ECD8A1 /* ProfileCell.swift */; };
 		8E6619E1285613F200ECD8A1 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619E0285613F200ECD8A1 /* ProfileHeader.swift */; };
+		8E677108285E534000A15C3D /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E677107285E534000A15C3D /* UserCellViewModel.swift */; };
 		8E68B6F72850739A00BAA99F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68B6F62850739A00BAA99F /* FeedCell.swift */; };
 		8E68B6F9285074AF00BAA99F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68B6F8285074AF00BAA99F /* Extensions.swift */; };
 		8E6908AA285B352B0053DD28 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6908A9285B352B0053DD28 /* ProfileHeaderViewModel.swift */; };
@@ -78,6 +79,7 @@
 		8E6619DC2855F29B00ECD8A1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8E6619DE285613D900ECD8A1 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		8E6619E0285613F200ECD8A1 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		8E677107285E534000A15C3D /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		8E68B6F62850739A00BAA99F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		8E68B6F8285074AF00BAA99F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8E6908A9285B352B0053DD28 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */,
 				8E6908A9285B352B0053DD28 /* ProfileHeaderViewModel.swift */,
+				8E677107285E534000A15C3D /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				8E6908AA285B352B0053DD28 /* ProfileHeaderViewModel.swift in Sources */,
 				8EE79559285646CA00767D2F /* Constants.swift in Sources */,
 				8E830683284F2D4E009E13CE /* FeedController.swift in Sources */,
+				8E677108285E534000A15C3D /* UserCellViewModel.swift in Sources */,
 				8E830681284F2AE7009E13CE /* MainTabController.swift in Sources */,
 				8E68B6F9285074AF00BAA99F /* Extensions.swift in Sources */,
 				8E6619DB2855F28C00ECD8A1 /* ImageUploader.swift in Sources */,
