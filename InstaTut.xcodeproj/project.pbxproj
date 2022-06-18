@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E570371285DD8E700DA7085 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E570370285DD8E700DA7085 /* UserCell.swift */; };
 		8E59A6F928533EFA0020C3CC /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59A6F828533EFA0020C3CC /* CustomTextFields.swift */; };
 		8E59A6FB28535EF10020C3CC /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */; };
 		8E5CAD0D2851FD7D002878C5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CAD0C2851FD7D002878C5 /* LoginController.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E570370285DD8E700DA7085 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		8E59A6F828533EFA0020C3CC /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		8E5CAD0C2851FD7D002878C5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				8E6619E2285613FC00ECD8A1 /* Profile */,
 				8E68B6F62850739A00BAA99F /* FeedCell.swift */,
 				8E59A6F828533EFA0020C3CC /* CustomTextFields.swift */,
+				8E570370285DD8E700DA7085 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				8E830689284F2D86009E13CE /* NotificationController.swift in Sources */,
 				8E830685284F2D5E009E13CE /* SearchController.swift in Sources */,
 				8E59A6FB28535EF10020C3CC /* AuthenticationViewModel.swift in Sources */,
+				8E570371285DD8E700DA7085 /* UserCell.swift in Sources */,
 				8E830667284F2609009E13CE /* AppDelegate.swift in Sources */,
 				8E83068B284F2D92009E13CE /* ProfileController.swift in Sources */,
 				8EE7955B2856486800767D2F /* User.swift in Sources */,
