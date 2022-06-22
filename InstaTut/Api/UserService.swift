@@ -36,12 +36,12 @@ struct UserService {
         
         COLLECTION_FOLLOWING
             .document(currentUid)
-            .collection("user-following")
+            .collection(USER_FOLLOWING_COLLECTION_NAME)
             .document(uid)
             .setData([:]) { error in
                 COLLECTION_FOLLOWERS
                     .document(uid)
-                    .collection("user-followers")
+                    .collection(USER_FOLLOWERS_COLLECTION_NAME)
                     .document(currentUid)
                     .setData([:], completion: completion)
             }
@@ -52,14 +52,27 @@ struct UserService {
         
         COLLECTION_FOLLOWING
             .document(currentUid)
-            .collection("user-following")
+            .collection(USER_FOLLOWING_COLLECTION_NAME)
             .document(uid)
             .delete { error in
                 COLLECTION_FOLLOWERS
                     .document(uid)
-                    .collection("user-followers")
+                    .collection(USER_FOLLOWERS_COLLECTION_NAME)
                     .document(currentUid)
                     .delete(completion: completion)
+            }
+    }
+    
+    static func checkIfUserIsFollowed(uid: String, completion: @escaping(Bool) -> Void) {
+        guard let currentUid = Auth.auth().currentUser?.uid else {return}
+
+        COLLECTION_FOLLOWING
+            .document(currentUid)
+            .collection(USER_FOLLOWING_COLLECTION_NAME)
+            .document(uid)
+            .getDocument{ (snapshot, error) in
+                guard let isFollowed = snapshot?.exists else {return}
+                completion(isFollowed)
             }
     }
     
