@@ -36,6 +36,8 @@
 		8EC2870B2865B13E00016ADD /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2870A2865B13E00016ADD /* UploadPostController.swift */; };
 		8EC2870D2865B4D300016ADD /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2870C2865B4D300016ADD /* InputTextView.swift */; };
 		8EC2870F2865BF9000016ADD /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2870E2865BF9000016ADD /* PostService.swift */; };
+		8EC287112865C7E000016ADD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC287102865C7E000016ADD /* Post.swift */; };
+		8EC287132865CB8E00016ADD /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC287122865CB8E00016ADD /* PostViewModel.swift */; };
 		8EE795572856469500767D2F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE795562856469500767D2F /* UserService.swift */; };
 		8EE79559285646CA00767D2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE79558285646CA00767D2F /* Constants.swift */; };
 		8EE7955B2856486800767D2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7955A2856486800767D2F /* User.swift */; };
@@ -75,6 +77,8 @@
 		8EC2870A2865B13E00016ADD /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		8EC2870C2865B4D300016ADD /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		8EC2870E2865BF9000016ADD /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		8EC287102865C7E000016ADD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8EC287122865CB8E00016ADD /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		8EE795562856469500767D2F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		8EE79558285646CA00767D2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8EE7955A2856486800767D2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */,
 				8E6908A9285B352B0053DD28 /* ProfileHeaderViewModel.swift */,
 				8E677107285E534000A15C3D /* UserCellViewModel.swift */,
+				8EC287122865CB8E00016ADD /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8EE7955A2856486800767D2F /* User.swift */,
+				8EC287102865C7E000016ADD /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC287132865CB8E00016ADD /* PostViewModel.swift in Sources */,
 				8E83066B284F2609009E13CE /* ViewController.swift in Sources */,
 				8E6619E1285613F200ECD8A1 /* ProfileHeader.swift in Sources */,
 				8EC2870B2865B13E00016ADD /* UploadPostController.swift in Sources */,
@@ -376,6 +383,7 @@
 				8E830681284F2AE7009E13CE /* MainTabController.swift in Sources */,
 				8E68B6F9285074AF00BAA99F /* Extensions.swift in Sources */,
 				8E6619DB2855F28C00ECD8A1 /* ImageUploader.swift in Sources */,
+				8EC287112865C7E000016ADD /* Post.swift in Sources */,
 				8E6619DD2855F29B00ECD8A1 /* AuthService.swift in Sources */,
 				8EC2870F2865BF9000016ADD /* PostService.swift in Sources */,
 				8EE795572856469500767D2F /* UserService.swift in Sources */,
