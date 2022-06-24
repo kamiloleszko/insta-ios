@@ -26,4 +26,18 @@ struct PostViewModel {
     var likes: Int {
         return post.likes
     }
+    
+    var likesLabelText: String {
+        return post.likes != 1
+        ? "\(post.likes) likes"
+        : "\(post.likes) like"
+    }
+    
+    var ownerImageUrl: URL? {
+        return URL(string: post.ownerImageUrl)
+    }
+    
+    var ownerUsername: String {
+        return post.ownerUsername
+    }
 }
