@@ -19,8 +19,11 @@ class UploadPostController: UIViewController {
         return iv
     }()
     
-    private let captionTextView: UITextView = {
-        let tv = UITextView();
+    private lazy var captionTextView: InputTextView = {
+        let tv = InputTextView();
+        tv.placeholderText = "Enter caption.."
+        tv.font = UIFont.systemFont(ofSize: 16)
+        tv.delegate = self
         return tv
     }()
     
@@ -38,9 +41,7 @@ class UploadPostController: UIViewController {
         super.viewDidLoad()
         configureUi()
     }
-    
-    // MARK: - Helpers
-    
+        
     // MARK: - Actions
     
     @objc func didTapCancel() {
@@ -51,7 +52,13 @@ class UploadPostController: UIViewController {
         print("DEBUG: Share post here ...")
     }
     
-    // MARK: - ConfigureUi
+    // MARK: - Helpers
+    
+    func checkMaxLength(_ textView: UITextView, maxLength: Int) {
+        if (textView.text.count > maxLength) {
+            textView.deleteBackward()
+        }
+    }
     
     func configureUi() {
         view.backgroundColor = .white
@@ -84,8 +91,18 @@ class UploadPostController: UIViewController {
         characterCountLabel.anchor(
             bottom: captionTextView.bottomAnchor,
             right: view.rightAnchor,
-            paddingBottom: 12,
+            paddingBottom: -8,
             paddingRight: 12
         )
+    }
+}
+
+// MARK: - UiTextFieldDelegate
+
+extension UploadPostController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        checkMaxLength(textView, maxLength: 100)
+        let count = textView.text.count
+        characterCountLabel.text = "\(count)/100"
     }
 }
