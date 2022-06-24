@@ -62,6 +62,7 @@
 		8E830687284F2D72009E13CE /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E830686284F2D72009E13CE /* ImageSelectorController.swift */; };
 		8E830689284F2D86009E13CE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E830688284F2D86009E13CE /* NotificationController.swift */; };
 		8E83068B284F2D92009E13CE /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83068A284F2D92009E13CE /* ProfileController.swift */; };
+		8EC287092865955E00016ADD /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8EC287082865955E00016ADD /* YPImagePicker */; };
 		8EE795572856469500767D2F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE795562856469500767D2F /* UserService.swift */; };
 		8EE79559285646CA00767D2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE79558285646CA00767D2F /* Constants.swift */; };
 		8EE7955B2856486800767D2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7955A2856486800767D2F /* User.swift */; };
@@ -109,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E6619B72855EAC100ECD8A1 /* FirebaseDatabase in Frameworks */,
+				8EC287092865955E00016ADD /* YPImagePicker in Frameworks */,
 				8E6619C52855EAC100ECD8A1 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				8E6619BD2855EAC100ECD8A1 /* FirebaseFirestore in Frameworks */,
 				8E6619A92855EAC100ECD8A1 /* FirebaseAnalyticsSwift in Frameworks */,
@@ -308,6 +310,7 @@
 				8E6619D82855EAC100ECD8A1 /* FirebaseStorageCombine-Community */,
 				8E6908AC285B40820053DD28 /* SDWebImage */,
 				8E6908AE285B40820053DD28 /* SDWebImageMapKit */,
+				8EC287082865955E00016ADD /* YPImagePicker */,
 			);
 			productName = InstaTut;
 			productReference = 8E830663284F2609009E13CE /* InstaTut.app */;
@@ -340,6 +343,7 @@
 			packageReferences = (
 				8E6619A32855EAC100ECD8A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8E6908AB285B40810053DD28 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				8EC287072865955E00016ADD /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 8E830664284F2609009E13CE /* Products */;
 			projectDirPath = "";
@@ -550,16 +554,19 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.software.kolsoft.InstaTut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -579,16 +586,19 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.software.kolsoft.InstaTut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
@@ -627,6 +637,14 @@
 		8E6908AB285B40810053DD28 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8EC287072865955E00016ADD /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
@@ -779,6 +797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8E6908AB285B40810053DD28 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		8EC287082865955E00016ADD /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EC287072865955E00016ADD /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
