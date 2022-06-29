@@ -9,6 +9,7 @@ import Firebase
 
 let USER_FOLLOWERS_COLLECTION_NAME = "user-followers"
 let USER_FOLLOWING_COLLECTION_NAME = "user-following"
+let COMMENTS_COLLECTION_NAME = "comments"
 
 let COLLECTION_USERS = Firestore.firestore().collection("users")
 let COLLECTION_FOLLOWERS = Firestore.firestore().collection("followers")
