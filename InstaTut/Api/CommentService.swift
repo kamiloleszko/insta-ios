@@ -26,23 +26,14 @@ class CommentService {
     }
     
     static func fetchComments(forPost postId: String, completion: @escaping([Comment]) -> Void) {
-//        COLLECTION_POSTS
-//            .document(postId)
-//            .collection(COMMENTS_COLLECTION_NAME)
-//            .order(by: "timestamp", descending: true)
-//            .getDocunments { (snapshot, error) in
-//                guard let documents = snapshot?.documents else {return}
-//
-//                let comments = documents.map({
-//                    Comment(dictionary: $0.data())
-//                })
-//            }
         var comments = [Comment]()
         
         let query = COLLECTION_POSTS
             .document(postId)
             .collection(COMMENTS_COLLECTION_NAME)
             .order(by: "timestamp", descending: true)
+        
+        // dzieki temu automatyczne odswiezanie przy dodaniu nowego komentarza
         
         query.addSnapshotListener{ (snapshot, error) in
             snapshot?.documentChanges.forEach({ change in
