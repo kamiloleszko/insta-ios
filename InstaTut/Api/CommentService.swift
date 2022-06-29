@@ -37,9 +37,7 @@ class CommentService {
         
         query.addSnapshotListener{ (snapshot, error) in
             snapshot?.documentChanges.forEach({ change in
-                
-                print("DEBUG: SNAPSHOT: \(change)")
-                
+                                
                 if change.type == .added {
                     let data = change.document.data()
                     let comment = Comment(dictionary: data)
