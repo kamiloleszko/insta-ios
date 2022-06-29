@@ -12,6 +12,8 @@
 		8E59A6FB28535EF10020C3CC /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */; };
 		8E5CAD0D2851FD7D002878C5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CAD0C2851FD7D002878C5 /* LoginController.swift */; };
 		8E5CAD0F2851FD89002878C5 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CAD0E2851FD89002878C5 /* RegistrationController.swift */; };
+		8E5D627E286C57FB00F2E9F5 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D627D286C57FB00F2E9F5 /* CommentController.swift */; };
+		8E5D6280286C59D600F2E9F5 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D627F286C59D600F2E9F5 /* CommentCell.swift */; };
 		8E6619A22855E93A00ECD8A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E6619A12855E93A00ECD8A1 /* GoogleService-Info.plist */; };
 		8E6619DB2855F28C00ECD8A1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DA2855F28C00ECD8A1 /* ImageUploader.swift */; };
 		8E6619DD2855F29B00ECD8A1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DC2855F29B00ECD8A1 /* AuthService.swift */; };
@@ -51,6 +53,8 @@
 		8E59A6FA28535EF10020C3CC /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		8E5CAD0C2851FD7D002878C5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8E5CAD0E2851FD89002878C5 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		8E5D627D286C57FB00F2E9F5 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		8E5D627F286C59D600F2E9F5 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		8E6619A12855E93A00ECD8A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E6619DA2855F28C00ECD8A1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		8E6619DC2855F29B00ECD8A1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				8E830688284F2D86009E13CE /* NotificationController.swift */,
 				8E83068A284F2D92009E13CE /* ProfileController.swift */,
 				8EC2870A2865B13E00016ADD /* UploadPostController.swift */,
+				8E5D627D286C57FB00F2E9F5 /* CommentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				8E68B6F62850739A00BAA99F /* FeedCell.swift */,
 				8E59A6F828533EFA0020C3CC /* CustomTextFields.swift */,
 				8E570370285DD8E700DA7085 /* UserCell.swift */,
+				8E5D627F286C59D600F2E9F5 /* CommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				8EC287132865CB8E00016ADD /* PostViewModel.swift in Sources */,
 				8E83066B284F2609009E13CE /* ViewController.swift in Sources */,
 				8E6619E1285613F200ECD8A1 /* ProfileHeader.swift in Sources */,
+				8E5D627E286C57FB00F2E9F5 /* CommentController.swift in Sources */,
 				8EC2870B2865B13E00016ADD /* UploadPostController.swift in Sources */,
 				8E5CAD0D2851FD7D002878C5 /* LoginController.swift in Sources */,
 				8E68B6F72850739A00BAA99F /* FeedCell.swift in Sources */,
@@ -390,6 +397,7 @@
 				8E6619DF285613D900ECD8A1 /* ProfileCell.swift in Sources */,
 				8E830669284F2609009E13CE /* SceneDelegate.swift in Sources */,
 				8E5CAD0F2851FD89002878C5 /* RegistrationController.swift in Sources */,
+				8E5D6280286C59D600F2E9F5 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

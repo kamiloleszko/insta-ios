@@ -9,7 +9,7 @@ import Foundation
 
 struct PostViewModel {
     
-    private let post: Post
+    let post: Post
     
     init(post: Post) {
         self.post = post
