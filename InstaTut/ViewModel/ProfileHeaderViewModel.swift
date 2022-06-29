@@ -54,7 +54,7 @@ struct ProfileHeaderViewModel {
     }
     
     var numberOfPosts: NSAttributedString {
-        return attributedStateText(value: 5, label: "posts")
+        return attributedStateText(value: user.stats.posts, label: "posts")
     }
     
     func attributedStateText(value: Int, label: String) -> NSAttributedString {

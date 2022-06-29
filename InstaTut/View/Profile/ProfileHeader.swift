@@ -50,7 +50,6 @@ class ProfileHeader: UICollectionReusableView {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-//        label.attributedText = viewModel?.numberOfPosts
         return label
     }()
     
@@ -58,7 +57,6 @@ class ProfileHeader: UICollectionReusableView {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-//        label.attributedText = viewModel?.numberOfFollowers
         return label
     }()
     
@@ -66,7 +64,6 @@ class ProfileHeader: UICollectionReusableView {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-//        label.attributedText = viewModel?.numberOfFollowing
         return label
     }()
     
