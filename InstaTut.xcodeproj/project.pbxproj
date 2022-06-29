@@ -14,6 +14,7 @@
 		8E5CAD0F2851FD89002878C5 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CAD0E2851FD89002878C5 /* RegistrationController.swift */; };
 		8E5D627E286C57FB00F2E9F5 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D627D286C57FB00F2E9F5 /* CommentController.swift */; };
 		8E5D6280286C59D600F2E9F5 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D627F286C59D600F2E9F5 /* CommentCell.swift */; };
+		8E5D6282286C642800F2E9F5 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D6281286C642800F2E9F5 /* CommentInputAccessoryView.swift */; };
 		8E6619A22855E93A00ECD8A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E6619A12855E93A00ECD8A1 /* GoogleService-Info.plist */; };
 		8E6619DB2855F28C00ECD8A1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DA2855F28C00ECD8A1 /* ImageUploader.swift */; };
 		8E6619DD2855F29B00ECD8A1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6619DC2855F29B00ECD8A1 /* AuthService.swift */; };
@@ -55,6 +56,7 @@
 		8E5CAD0E2851FD89002878C5 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		8E5D627D286C57FB00F2E9F5 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
 		8E5D627F286C59D600F2E9F5 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		8E5D6281286C642800F2E9F5 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		8E6619A12855E93A00ECD8A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E6619DA2855F28C00ECD8A1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		8E6619DC2855F29B00ECD8A1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				8E59A6F828533EFA0020C3CC /* CustomTextFields.swift */,
 				8E570370285DD8E700DA7085 /* UserCell.swift */,
 				8E5D627F286C59D600F2E9F5 /* CommentCell.swift */,
+				8E5D6281286C642800F2E9F5 /* CommentInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				8E83068B284F2D92009E13CE /* ProfileController.swift in Sources */,
 				8EE7955B2856486800767D2F /* User.swift in Sources */,
 				8E59A6F928533EFA0020C3CC /* CustomTextFields.swift in Sources */,
+				8E5D6282286C642800F2E9F5 /* CommentInputAccessoryView.swift in Sources */,
 				8E6908AA285B352B0053DD28 /* ProfileHeaderViewModel.swift in Sources */,
 				8EC2870D2865B4D300016ADD /* InputTextView.swift in Sources */,
 				8EE79559285646CA00767D2F /* Constants.swift in Sources */,
