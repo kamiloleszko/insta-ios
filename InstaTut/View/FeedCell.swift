@@ -158,7 +158,6 @@ class FeedCell: UICollectionViewCell {
     }
     
     @objc func didTapComments() {
-        print("Debug: did tap comment")
         guard let viewModel = viewModel else {
             return
         }
